@@ -6,6 +6,9 @@
 # Also some case observation from PTT, a Taiwanese BBS which reveals ALL users' geoip.
 # https://www.ptt.cc/bbs/WorkinChina/M.1638802828.A.995.html
 
+# According to cn block list of Greatfire Analyzer, ptt.cc should be 100% blocked.
+# https://github.com/Loyalsoldier/cn-blocked-domain
+
 whois 101.87.102.26
 
 : '
