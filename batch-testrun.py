@@ -8,14 +8,16 @@ https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
 
 2) save as deploy-pip.bat for installation of missing packages.
 @echo off
-cd "C:\Users\myuser.mydomain\AppData\Local\Programs\Python\Python39"
+REM cd won't work for bat. place bat into python folder then shortcut for your desired location.
+REM cd "C:\Users\myuser.mydomain\AppData\Local\Programs\Python\Python39"
 Scripts\pip install package2
 Scripts\pip install package3
 pause
 
 3) save as deploy.bat for production run.
 @echo off
-cd "C:\Users\myuser.mydomain\AppData\Local\Programs\Python\Python39"
+REM cd won't work for bat. place bat into python folder then shortcut for your desired location.
+REM cd "C:\Users\myuser.mydomain\AppData\Local\Programs\Python\Python39"
 REM variables should be changed accordingly.
 .\python deploy.py var1 var2
 pause
